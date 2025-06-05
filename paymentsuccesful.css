@@ -1,0 +1,64 @@
+body{
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    height: 100vh;
+}
+.checkmark-box{
+    color: white;
+    font-size: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60%;
+    background-color: hsl(239, 85%, 50%);
+    box-shadow: 0px 0px 10px blue;
+    margin-bottom: 0; 
+    animation: glow 3s ease-in-out infinite alternate;
+    
+    
+}
+#p1{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    margin-top: 90px;
+    text-shadow: 5px 5px 10px blue;
+}
+#p2{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    margin-top: 0px;
+    text-shadow: 5px 5px 10px blue;
+}
+.checkmark{
+    text-align: center;
+    font-weight: bold;
+  
+}
+
+@keyframes glow{
+    from{
+        box-shadow:  0px 0px 10px blue;
+    }
+    to{
+        box-shadow: 0px 0px 505px hsl(231, 96%, 47%);
+    }
+}
+@media (max-width: 768px) {
+     body{
+        text-align: center;   
+    }
+    .checkmark-box{
+         border-radius: 80%;
+         width: 80%;
+         margin-left: 10%;  
+         margin-bottom: 0; 
+
+    }
+}

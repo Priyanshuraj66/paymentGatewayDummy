@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Upi.css">
+</head>
+<body>
+        <div class="C1">
+         <h1 id="myhead"> UPI </h1> 
+         <label  class="id-class"  id="i1" for="input-1">Enter your UPI ID: </label><br>
+         <input onkeypress="removeNumbers(event)" id="input-1" class="id-class" type="text" placeholder="username@bank"> </input><br><br>
+
+         <label  class="i-class"  id="i2" for="input-2">Enter Amount: </label><br>
+         <span>$</span>
+         <input onkeypress="removeLettersandSymbols(event)" id="input-2" class="i-class" type="number"> </input><br><br><br><br>
+         <button id="canncelpay"> Cancel Payment </button>
+         <button id="paynow"> Pay Now </button>
+        </div>
+        
+        <script src="Upi.js"></script>
+    
+</body>
+</html>

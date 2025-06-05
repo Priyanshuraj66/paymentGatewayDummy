@@ -1,0 +1,72 @@
+body{
+   background-color: black;
+}
+.load-contain1{  
+   
+   margin-top: 20rem;
+   max-width: 48vw; 
+   margin-left: 25%; 
+   margin-right: 25%; 
+   height: 4vh;
+   border: 3px solid blue;
+   border-radius: 105px;
+   box-shadow: 5px 15px 15px blue;
+    
+}
+.load{
+    background-color: yellow;
+    border: 3px solid white; 
+    border-radius: 105px;
+    height: 4vh;
+    width: 100%;    
+    animation: grow 5s ease-in-out infinite; 
+    box-shadow: 5px 15px 15px yellow;
+    
+}
+
+@keyframes grow{
+    0%{
+        width: 0%;
+    }
+    5%{
+        width: 5%;
+        
+    }
+    15%{
+        width: 15%;
+    }
+    45%{
+        width:45%;
+        
+    }
+    55%{
+        width:55%;
+        
+    }
+    100%{
+       width: 100%;
+    }
+}
+h3{
+    color: white;
+    margin-left: 34.5rem;
+    font-size: 1.5rem;
+    font-family: Times;
+    text-shadow: 3px 3px 6px yellow;
+}
+@media (max-width: 768px) {
+    .load-contain1{
+        width: 100%; 
+    }
+    .load{
+        width: 100%; 
+    } 
+    h3{
+        margin-left: 6rem; 
+        width: 56vw; 
+    }
+    .whole-thing{
+        margin-top: 27rem;  
+        width: 100%; 
+    }
+}

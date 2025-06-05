@@ -1,0 +1,123 @@
+body{
+ background-color: black;
+ text-align: center;
+}
+h1{
+ color: white;
+ font-family: "Dancing Script";
+ font-size: 3em;
+ text-shadow: 5px 5px 10px blue;
+ margin-top: 1em;
+ display: inline-block;
+ width: 10em;
+ text-align: center;
+ box-shadow:  5px 10px 20px blue;
+}
+h5{
+    color: white;
+    font-size: 1rem;
+    font-family: Helvetica; 
+    animation: myAnimation1 24s infinite;
+}
+h3{
+    color: white;
+    text-align: left;
+    font-size: 2em;
+    text-shadow: 5px 5px 10px blue;
+    box-shadow:  5px 10px 20px blue;
+    width: 15em;
+    
+}
+#container1{
+    color: white;
+    text-align: left;
+    text-align: justify;
+    margin-left: 1em;
+    margin-bottom: 25em;
+    font-size: 1em;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 30em; 
+}
+.fonts{
+    color: white;
+}
+.payments{
+    display: flex;
+    align-items: center;
+    border: 1px  solid white;
+    border-radius: 0.75em;
+    text-shadow: 5px 4px 20px yellow;
+    box-shadow: 5px 3px 5px yellow;
+    width: 30vw; 
+    height: 10vh; 
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.payments:hover{
+    box-shadow: 10px 10px 24px yellow; 
+}
+#TANDC{
+   display: flex;
+   justify-content: flex-start;
+   margin-top: 10%;
+   font-family: sans-serif;
+}
+.buttons{
+   display: flex;
+   flex-direction: row;
+   margin-top:40%;
+   margin-left:  30rem;  
+
+}
+#myContinue, #mySubmi{
+    padding: 10px 50px;
+    border: 3px solid hsl(240, 75%, 31%);
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+#myContinue:hover{
+    background-color: rgb(197, 197, 197);
+}
+#mySubmi:hover{
+    background-color: rgb(197, 197, 197);
+}
+
+@keyframes myAnimation1{
+    0%{
+        transform: translateX(-100%);
+
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+@media (max-width: 768px){
+    .buttons{
+        justify-content: flex-start;
+        margin-left: 1rem;
+    }
+ h1{
+ color: white;
+ font-family: "Dancing Script";
+ font-size: 3rem;
+ text-shadow: 5px 5px 10px blue;
+ margin-top: 1em;
+ display: inline-block;
+ width: 8em;
+ 
+ box-shadow:  5px 10px 20px blue;
+}
+.payments{
+   border-radius: 0.75em; 
+   width:60vw; 
+   margin-left: 3%; 
+}
+h3{
+    width: 94vw; 
+}
+
+}
+

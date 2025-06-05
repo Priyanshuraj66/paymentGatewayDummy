@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"  href="paymentpage.css">
+</head>
+<body>
+    <div class="demo-warning">
+    <strong>⚠️ DEMO PROJECT ONLY</strong><br>
+    This is for learning purposes. No real payments will be processed.
+    </div>
+
+    <div id="cardforms" style="display:block;">
+        <h3>Enter your Debit/Credit Card details: </h3>
+        <label for="myci1">  Enter your Card Number: </label>
+        <input type="text" placeholder="Card Number" id="myci1" oninput="ValidateINput(this);" maxlength="16"><br>
+        <label for="myci2">Enter the Expiry Date: </label>
+        <input type="month" placeholder="Expiry Date" id="myci2"><br>
+
+       <label for="myci3">Enter your CVV: </label>
+        <input onkeypress="removeLettersandSymbols(event)" type="text" placeholder="CVV" id="myci3" maxlength="3" oninput="ValidateCVV(this)"><br>
+       
+     <div class="buttons">
+        <button id="card">Cancel Payment</button> &nbsp; 
+       <button id="debitbtn" onclick="submitBTN()">Pay now</button>
+    </div>
+       
+      </div>
+      
+<script src="paymentpage.js"></script>   
+</body>
+</html>
